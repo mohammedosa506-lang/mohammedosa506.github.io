@@ -151,6 +151,29 @@ html[dir="rtl"] .typing-banner,
 html.translated-rtl .typing-banner {
     text-align: center; 
 }
+
+        /* --------------------------------------------------- */
+/* إصلاح مشاكل الترجمة على الجوال (عزل العناصر لمنع التداخل) */
+/* --------------------------------------------------- */
+
+html.translated-rtl li, 
+html[lang="ar"] li,
+html[dir="rtl"] li {
+    /* يمنع تداخل الإيموجي مع النص والنقاط في القوائم */
+    unicode-bidi: isolate; 
+}
+
+html.translated-rtl strong, 
+html[lang="ar"] strong,
+html[dir="rtl"] strong,
+html.translated-rtl b, 
+html[lang="ar"] b,
+html[dir="rtl"] b {
+    /* يعزل النصوص العريضة لمنع لخبطة ترتيب الجملة */
+    unicode-bidi: isolate; 
+    /* يضيف مسافة أمان إضافية لمنع التصاق الكلمات في الجوال */
+    margin: 0 4px; 
+}
         
     </style>
 </head>
