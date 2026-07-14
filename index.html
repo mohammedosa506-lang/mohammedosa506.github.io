@@ -106,7 +106,7 @@
         }
 
         ul {
-            padding-left: 20px;
+            padding-inline-start: 20px;
             line-height: 1.6;
         }
 
@@ -122,7 +122,7 @@
             text-decoration: none;
             font-weight: bold;
             color: #ffffff;
-            margin-right: 10px;
+            margin-inline-end: 10px;
             margin-top: 10px;
             font-size: 14px;
         }
@@ -135,6 +135,23 @@
             border-top: 1px solid var(--border-color);
             margin: 40px 0 20px 0;
         }
+
+/* قواعد التوافق التلقائي مع اللغة العربية عند الترجمة */
+html[lang="ar"], 
+html[dir="rtl"], 
+body[dir="rtl"],
+html.translated-rtl {
+    direction: rtl;
+    text-align: right;
+}
+
+/* إبقاء البانر المتحرك في المنتصف */
+html[lang="ar"] .typing-banner, 
+html[dir="rtl"] .typing-banner,
+html.translated-rtl .typing-banner {
+    text-align: center; 
+}
+        
     </style>
 </head>
 <body>
@@ -204,7 +221,7 @@
     <div class="section">
         <h2>🤝 Connect with Me</h2>
         <a href="https://www.linkedin.com/in/mohammed-o-alhudeidi-36b47803" target="_blank" class="btn btn-linkedin">LinkedIn</a>
-        <a href="mailto:mohammed.o.s.a.506@gmail.com" class="btn btn-email">Email Me</a>
+        <a href="mailto:mohammed.hudeidi@gmail.com" class="btn btn-email">Email Me</a>
     </div>
     </div>
 
