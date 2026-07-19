@@ -1,2 +1,2 @@
-# mohammedosa506.github.io
+# mohammedhudeidi.github.io
 my personal website
